@@ -1,0 +1,27 @@
+.login-card{
+    max-height: max-content;
+    min-height: 300px;
+    padding-top: 10%;
+    padding-bottom: 15%;
+}
+.YT_Logo{
+    width: 20%;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+.login-text{
+    margin-left: 2%;
+}
+
+.login_button{
+    margin-left: 75%;
+    position: absolute;
+}
+.login_links:hover {
+    text-decoration: none;
+}
+.password {
+    text-align: left;
+    margin-left: 7%;
+    font-size: 12px;
+}
