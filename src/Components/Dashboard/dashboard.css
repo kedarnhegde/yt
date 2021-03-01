@@ -1,0 +1,36 @@
+#dash_card {
+    border: none;
+}
+.dash_body {
+    text-align: left;
+}
+.dash_title {
+    font-weight: bold;
+    font-size: large;
+}
+.dash_chan{
+    opacity: 80%;
+    font-size: medium;
+}
+.dash_chan:hover {
+    opacity: 100%;
+}
+.dash_views {
+    opacity: 80%;
+    font-size: medium;
+}
+.dash_duration {
+    margin-top: 98%;
+    float: right; 
+    background-color: red;
+}
+.test1 {
+    background-color: red;
+    text-align: center;
+}
+.test2 {
+    background-color: royalblue;
+}
+.dash_avatar{
+    border-radius: 100%;
+}
