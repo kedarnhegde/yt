@@ -1,38 +1,43 @@
 import React from 'react';
-import { Card, CardBody, CardImg, CardTitle, CardImgOverlay} from 'reactstrap';
 import './dashboard.css';
+import Video_Card from './video_card';
 
 function Dashboard() {
+
+    const data = [
+        {
+            "img": "https://picsum.photos/200/300",
+            "title": "This is a title",
+            "channel_img": "https://picsum.photos/200/300",
+            "channel_name": "Kedar Hegde",
+            "channel_link": 'https://www.facebook.com',
+            'video_link': 'www.youtube.com',
+            "views": "69",
+            "uploaded" : "1 Year Ago",
+           "duration" : "10:25"
+        }
+    ]
+
+    const videos = data.map((val) => {
+        return (
+            
+            <div className = 'col-12 col-md-6 col-lg-3 mb-2 mt-2' >
+               < Video_Card img={val.img} title={val.title} channel_name={val.channel_name} channel_img={val.channel_img} channel_link={val.channel_link} video_link={val.video_link}
+                            views={val.views} uploaded = {val.uploaded} duration = {val.duration}/>
+            </div>
+            
+        );
+    })
+
+
+
     return (
-        <div className="home">
-            <div className='container'>
-                <Card id='dash_card'>
-                    <CardImg src='https://picsum.photos/200' alt='yt_video' />
-                    <CardImgOverlay >
-                        <p className='dash_duration'>
-                            Duration
-                        </p>
-                    </CardImgOverlay>
-                    <CardBody>
-                        <div className='row'>
-                            <div className='col-2 col-md-1'>
-                                <img src="https://picsum.photos/50" alt="Remy Sharp" className='dash_avatar'/>
-                            </div>
-                            <div className='offset-1 offset-md-0 col-9 col-md-11 dash_body '>
-                                <CardTitle className='dash_title'>This is the title, it will usually be very big</CardTitle>
-                                <p className='dash_chan'>
-                                    Channel name
-                                </p>
-                                <p className='dash_views'>
-                                    69 Views • 1 year ago
-                                </p>
-                            </div>
-                        </div>
-                    </CardBody>
-                </Card>
+        <div className=''>
+            <div className='row'>
+
+            {videos}
             </div>
         </div>
     );
 }
-
 export default Dashboard;

@@ -16,21 +16,66 @@
     opacity: 100%;
 }
 .dash_views {
-    opacity: 80%;
+    opacity: 70%;
     font-size: medium;
 }
 .dash_duration {
-    margin-top: 98%;
-    float: right; 
-    background-color: red;
+    
+    position: absolute;
+    bottom: 41%;
+  right: 10%;
+    background-color: rgba(0,0,0,0.8);
+    padding-left: 5px;
+    padding-right: 5px;
+    z-index: 100;
+    color: white;
+    border-radius: 3px;
 }
 .test1 {
     background-color: red;
-    text-align: center;
+    
 }
 .test2 {
     background-color: royalblue;
 }
 .dash_avatar{
     border-radius: 100%;
+    height: 4vw;
+    width: 4vw;
 }
+#dash_image {
+    /* object-fit:contain; */
+height: 12vw;
+width: 100%;
+background-color: brown;
+}
+#dash_chan_link {
+    text-decoration: none;
+    color: black;
+}
+
+@media only screen and (max-width: 990px) {
+    #dash_image {
+        height: 55vw;
+    }
+  }
+  @media only screen and (min-width: 767px) {
+    #dash_image {
+        height: 25vw;
+    }
+  }
+  
+
+  @media only screen and (min-width: 990px) {
+    #dash_image {
+        height: 12vw;
+    }
+  }
+
+  @media only screen and (min-width: 990px) and (max-width: 1096px) {
+    .dash_duration {
+        bottom: 56%;
+        right: 12%; 
+    }
+  }
+  
