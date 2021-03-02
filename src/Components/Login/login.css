@@ -2,6 +2,10 @@
     display: grid;
     place-items: center;
 }
+.register{
+    display: grid;
+    place-items: center;
+}
 .login-card{
     max-height: max-content;
     min-height: 300px;
@@ -12,7 +16,6 @@
     width: 20%;
     text-align: center;
 }
-
 
 .login_button{
     text-align: right;

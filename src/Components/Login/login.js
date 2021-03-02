@@ -52,7 +52,7 @@ function Login(){
                 <div className='mt-4 textfield'>
                   <div className='col-12'>
                     {EmailError?<TextField error id="outlined-basic" label="Email" variant="outlined" onChange={(event) => handleChange(event, "email")} style = {{width : '100%'}} helperText = {EmailErrorMsg}/>:<TextField id="outlined-basic" label="Email" variant="outlined" onChange={(event) => handleChange(event, "email")} style = {{width : '100%'}}/>}
-                    <div className ='mt-3'>{PasswordError?<TextField error id="outlined-basic" label="Password" variant="outlined" type = 'password' onChange={(event) => handleChange(event, "password")} style = {{width : '100%'}} helperText = {PasswordErrorMsg}/>:<TextField id="outlined-basic" label="Password" variant="outlined" onChange={(event) => handleChange(event, "password")} style = {{width : '100%'}}/>}</div>
+                    <div className ='mt-3'>{PasswordError?<TextField error id="outlined-basic" label="Password" variant="outlined" type = 'password' onChange={(event) => handleChange(event, "password")} style = {{width : '100%'}} helperText = {PasswordErrorMsg}/>:<TextField id="outlined-basic" label="Password" type = 'password' variant="outlined" onChange={(event) => handleChange(event, "password")} style = {{width : '100%'}}/>}</div>
                   </div>
                 </div>
                 <div className='login-text'>
